@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lorenzo's Page</title>
+</head>
+<script>
+    function updateDateTime() {
+        var now = new Date();
+        var options = { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+        var datetimeString = now.toLocaleDateString(undefined, options);
+        document.getElementById('datetime').innerHTML = datetimeString;
+    }
+
+    // Update the time every second
+    setInterval(updateDateTime, 1000);
+
+    // Initialize
+    updateDateTime();
+</script>
+
+<body>
+    <div classe="date" id="datetime"></div>
+    <header>
+        <div class="page__title">
+            <h3>Lorenzo's Rare Pokémon Card Page</h3>
+        </div>
+    </header>
+    <header>
+        <nav>
+            <ul> 
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Trading_Card_Game">Wiki Info</a>
+                </li>
+                <li>
+                    <a href="https://www.pokemon.com/us/pokemon-tcg/pokemon-cards/">Pokemon Cards Search</a>
+                </li>
+            </ul>
+        </nav>     
+    </header>
+    <main>
+        <section class = "cards">
+            <ul class = "cards__list">
+                <li class = "cards__list__item">
+                    <img src="assets/pk1.png" alt="Pokemon card 1">
+                    <div class="cards__list__item__info">
+                        <h4>MewV is a Psychic-type Pokémon</h4>
+                    </div>
+                </li>
+                <li class = "cards__list__item">
+                    <img src="assets/pk2.png" alt="Pokemon card 2">
+                    <div class="cards__list__item__info">
+                        <h4>Machamp's four arms move reflexively, which makes it very fast and allows it to deliver rapid-fire punches.</h4>
+                    </div>
+                </li>
+                <li class = "cards__list__item">
+                    <img src="assets/pk3.png" alt="Pokemon card 3">
+                    <div class="cards__list__item__info">
+                        <h4>Dragonite is a dual-type Dragon/Flying pseudo-legendary Pokémon.</h4>
+                    </div>    
+                </li>
+                <li class = "cards__list__item">
+                    <img src="assets/pk4.png" alt="Pokemon card 4">
+                    <div class="cards__list__item__info">
+                        <h4>Blastoise is a large, bipedal turtle Pokémon.</h4>
+                        <h4>Piplup is a Water-type Pokémon</h4>
+                    </div>
+                </li>
+                <li class = "cards__list__item">
+                    <img src="assets/pk5.png" alt="Pokemon card 5">
+                    <div class="cards__list__item__info">
+                        <h4>Mewtwo is a Psychic-type Legendary Pokémon.</h4>
+                        <h4>Mew is a Psychic-type Pokémon with high stats.</h4>
+                    </div>
+                </li>
+                <li class = "cards__list__item">
+                    <img src="assets/pk6.png" alt="Pokemon card 6">
+                    <div class="cards__list__item__info">
+                        <h4>Charizard is a dual-type Fire/Flying Pokémon. It is the final form of Charmander.</h4>
+                    </div>   
+                </li>
+                <li class = "cards__list__item">
+                    <img src="assets/pk7.png" alt="Pokemon card 7">
+                    <div class="cards__list__item__info">
+                        <h4>Gyarados is a Pokémon whose design is inspired by dragons, specifically dragons seen in Chinese mythology.</h4>
+                    </div>
+                </li>
+                <li class = "cards__list__item">
+                    <img src="assets/pk8.png" alt="Pokemon card 8">
+                    <div class="cards__list__item__info">
+                        <h4>Naganadel is a dual-type Poison/Dragon Pokémon.</h4>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
