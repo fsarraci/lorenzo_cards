@@ -6,9 +6,10 @@ body {
 }
 .page__title {
     border-radius: 15px;
+    line-height: 0.2;
     background-color:#FFA41B;
     text-align: center;
-    padding: 1px 0;
+    padding: 0.05rem 0;
     width: 100%;
     color:blue;
     font-size:xx-large;
