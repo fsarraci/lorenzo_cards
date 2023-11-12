@@ -131,7 +131,7 @@ body div {
     }
 
     .cards__list__item {
-        flex: 0 1 100%; /* Full width for each card */
+        flex: 0 1 50%; /* Full width for each card */
     }
 
     header nav ul {
