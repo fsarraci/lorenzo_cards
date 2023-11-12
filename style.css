@@ -120,3 +120,27 @@ body div {
     text-align: right;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+    .page__title {
+        font-size: large; /* Smaller text */
+    }
+
+    .cards__list {
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .cards__list__item {
+        flex: 0 1 100%; /* Full width for each card */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    header nav ul li a {
+        margin: 0.5rem; /* Adjust margin */
+    }
+
+    /* Additional responsive adjustments */
+}
