@@ -45,6 +45,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     border-bottom: 1px solid aliceblue;
+    
 }
 
 .cards {
@@ -90,6 +91,7 @@ header nav ul li a:hover {
 
 .cards__list__item:hover {
     color:black;
+    cursor: pointer;
 }
 
 .cards__list__item__info {
